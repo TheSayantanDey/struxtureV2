@@ -92,7 +92,6 @@ const AgencyDetails = ({ data }: Props) => {
   useEffect(() => {
     if (data) {
       form.reset(data)
-      console.log(data)
     }
   }, [data])
 
@@ -284,7 +283,7 @@ const AgencyDetails = ({ data }: Props) => {
                 />
               </div>
 
-              {/* <FormField
+              <FormField
                 disabled={isLoading}
                 control={form.control}
                 name="whiteLabel"
@@ -309,7 +308,7 @@ const AgencyDetails = ({ data }: Props) => {
                     </FormItem>
                   )
                 }}
-              /> */}
+              />
               <FormField
                 disabled={isLoading}
                 control={form.control}
